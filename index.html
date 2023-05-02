@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto PHP sql</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datatables.min.css">
+    
+    <script src="funciones.js"></script>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datatables.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/xlsx.core.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Tabla Seria</h1>
+        <div class="col-12">
+            <table class="table table-striped table-bordered table-hover" id="tablaprueba">
+                <thead>
+                    <tr>
+                        <td>Serie</td>
+                        <td>Numero</td>
+                        <td>Fecha</td>
+                        <td>CodCliente</td>    
+                    </tr>
+                    
+                </thead>
+            </table>
+            <button onclick="ejecutar()" class="btn btn-sm btn-primary" id="btnActualizar" type="button" name="button">ActualizarDatos</button>
+            <button onclick="limpiar()" class="btn btn-sm btn-primary" id="btnLimpiar" type="button" name="button">LimpiarDatos</button>
+            <button onclick="exportar()" class="btn btn-sm btn-primary" id="btnExportar" type="button" name="button">ExportarDatos</button>
+        </div>
+    </div>
+    
+</body>
+</html>
